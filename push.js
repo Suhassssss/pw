@@ -9,17 +9,16 @@ let vapidKeys = {
     privateKey: '8c_yFL3zXda4mBvmO80ea4XS7BJGZpOMwuDElyAePqk'
   }
 
-push.setVapidDetails('mailto:suhasrlawate99@gmail.com', vapidKeys.publicKey, vapidKeys.privateKey)
+push.setVapidDetails('mailto:suhasrlawate99@gmail.com', vapidKeys.publicKey, vapidKeys.privateKey);
 
 let sub = {
     endpoint:
-        "https://fcm.googleapis.com/fcm/send/fLx9crZsLEg:APA91bFcV7kiNUVM_Sai744eHPut-wIGGQLFKNIfDkjL-HNxsH4rDI89xoJ13yskru0FBGuZGlBSEMWCyAWmMsVjYpUwtgcCsyJZIn0OO0vjGAWkNgeIjjvGmvMBO60NafHRX8mqd1DO",
+        "https://fcm.googleapis.com/fcm/send/fgK_Ua_sgwo:APA91bFbb4SlFqG5eJqhsbmebLSqvh9sGjxHVtbqF2vsedECOIxnlFlqeaLh5MPYX1X8GXPeg2H-6tzI9zaf8Vd99cdxCKKcLzQYEDxv5QcmleVZYvOgE0SlX4QuDbZjU6HHQ9J1qakN",
         expirationTime:null,
         keys:{
             p256dh:
-                "BF_p3qReW3FEWREN3XHJGuJaAqA4e9lWUDELztZarRw_x9Nhw8Lv7CGyY1q_VsPiwLBiO93IImdNoxjWZM4AQmg",
-            auth:"tNsTpeg8Z9_qO20EM9Jyfg"
+                "BOpJK4MboKFox8p3gPRPP9kMKsnJpwuhx_35Crm1TomASOw2siEbQOFtXP20AEY3ebT1g7X6t4Zkj2-TN7v0TE8",
+            auth:"J0dVUyEJoUm6R7GxUb1Jfg"
         }
     };
-
 push.sendNotification(sub, 'test message')
