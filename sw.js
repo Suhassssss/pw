@@ -9,7 +9,7 @@ self.addEventListener('push', function(e) {
         },
         actions: [
             {
-                action: 'explore', title: 'View',
+                action: 'explore', title: 'More',
                 icon: 'images/checkmark.png'
             },
             {
